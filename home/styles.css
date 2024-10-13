@@ -6,21 +6,32 @@
     font-family: Arial, sans-serif;
 }
 
+/* Add background gradient to the whole page */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4d608f, #0d3669);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
 /* Navbar styling */
 .navbar {
-    background-color: darkgray;
+    background-color: rgba(169, 169, 169, 0.8); /* Slight transparency */
     padding: 15px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between; /* Space between nav links and logo */
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 /* Styling the list to be horizontal */
 .nav-list {
     list-style-type: none;
     display: flex;
-    gap: 20px; /* Adds space between items */
+    gap: 20px;
 }
 
 /* Link styling */
@@ -44,32 +55,25 @@
     width: auto;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .nav-list {
-        justify-content: space-around; /* Centers items horizontally */
-    }
-}
-
 /* Card container styling */
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* More space between cards */
     padding: 40px;
-    background-color: #f0f0f0;
-    min-height: 100vh;
+    width: 100%;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-/* Card styling */
+/* Updated card styling with increased width */
 .card {
     background-color: white;
-    width: 200px;
+    width: 500px; /* Increased the width */
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px;
+    padding: 30px; /* More padding inside the card */
     transition: transform 0.3s ease;
 }
 
@@ -77,7 +81,7 @@
     transform: scale(1.05);
 }
 
-/* Icon inside the card */
+/* Icon section inside the card */
 .card-icon {
     height: 80px;
     width: 80px;
@@ -118,4 +122,16 @@
 
 .card-button:hover {
     opacity: 0.9;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-list {
+        justify-content: space-around;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
