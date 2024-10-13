@@ -1,0 +1,121 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: darkgray;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Space between nav links and logo */
+    align-items: center;
+}
+
+/* Styling the list to be horizontal */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Adds space between items */
+}
+
+/* Link styling */
+.nav-item {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 10px;
+}
+
+/* Hover effect */
+.nav-item:hover {
+    color: #0073e6;
+}
+
+/* Logo styling */
+.navbar-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-list {
+        justify-content: space-around; /* Centers items horizontally */
+    }
+}
+
+/* Card container styling */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Icon inside the card */
+.card-icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Title */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description text */
+.card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.card-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    opacity: 0.9;
+}
