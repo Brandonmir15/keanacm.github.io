@@ -6,19 +6,17 @@
     font-family: Arial, sans-serif;
 }
 
-/* Add background gradient to the whole page */
+/* Body styling with gradient background */
 body {
-    height: 100vh;
-    background: linear-gradient(135deg, #4d608f, #0d3669);
+    background: linear-gradient(135deg, #1b45a8, #00387c);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
 }
 
 /* Navbar styling */
 .navbar {
-    background-color: rgba(169, 169, 169, 0.8); /* Slight transparency */
+    background-color: rgba(23, 23, 26, 0.8);
     padding: 15px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -38,7 +36,7 @@ body {
 .nav-item {
     text-decoration: none;
     font-size: 18px;
-    color: #333;
+    color: #e6e6e6;
     font-weight: 500;
     transition: color 0.3s;
     padding: 5px 10px;
@@ -55,25 +53,54 @@ body {
     width: auto;
 }
 
+/* Welcome message styling */
+.welcome-message {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.welcome-message h1 {
+    font-size: 36px;
+    color: #ffffff;
+
+}
+
+.welcome-message p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Font and Size for typed message */
+.typed-message h1{
+
+    font-size: 62px;
+    color: orange
+}
+
+
+
 /* Card container styling */
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* More space between cards */
+    gap: 30px;
     padding: 40px;
     width: 100%;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
+    margin-top: 50px; /* Moves cards down */
 }
 
-/* Updated card styling with increased width */
+/* Card styling with increased width */
 .card {
     background-color: white;
-    width: 500px; /* Increased the width */
+    width: 300px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 30px; /* More padding inside the card */
+    padding: 30px;
     transition: transform 0.3s ease;
 }
 

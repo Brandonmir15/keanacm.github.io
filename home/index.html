@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+
     <!-- Nav Bar -->
     <nav class="navbar">
         <ul class="nav-list">
@@ -17,6 +19,35 @@
         </ul>
         <img src="homeImages/acm.png" alt="ACM Logo" class="navbar-logo">
     </nav>
+
+    <!-- Welcome Message -->
+    <header class="welcome-message">
+
+        <!--Typed Message-->>
+        <div class="typed-message">
+
+            <h1><span class="auto-type"></span></h1>
+
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed(".auto-type", {
+
+                strings: ["Hello World!", "Hello Kean!", "Hello Student!", "Hello Staff!"],
+                typeSpeed: 200,
+                backSpeed: 200,
+                loop: true
+            })
+        </script>
+        </div>
+
+
+        <h1>Welcome to Kean ACM</h1>
+        <p>Explore the cards below to learn more about what we do!</p>
+
+    </header>
+
+
 
     <!-- Card Container -->
     <div class="card-container">
