@@ -13,9 +13,9 @@
     <nav class="navbar">
         <ul class="nav-list">
             <li><a href="#" class="nav-item">Home</a></li>
-            <li><a href="#about" class="nav-item">About</a></li>
-            <li><a href="#events" class="nav-item">Events</a></li>
-            <li><a href="https://cougarlink.kean.edu/" class="nav-item" target="_blank">Join on CougarLink</a></li>
+            <li><a href=".././about/index.html" class="nav-item">About</a></li>
+            <li><a href=".././events/index.html" class="nav-item">Events</a></li>
+            <li><a href="https://kean.campuslabs.com/engage" class="nav-item" target="_blank">Join on CougarLink</a></li>
         </ul>
         <img src="homeImages/acm.png" alt="ACM Logo" class="navbar-logo">
     </nav>
@@ -23,7 +23,7 @@
     <!-- Welcome Message -->
     <header class="welcome-message">
 
-        <!--Typed Message-->>
+        <!--Typed Message-->
         <div class="typed-message">
 
             <h1><span class="auto-type"></span></h1>
@@ -33,9 +33,9 @@
         <script>
             var typed = new Typed(".auto-type", {
 
-                strings: ["Hello World!", "Hello Kean!", "Hello Student!", "Hello Staff!"],
-                typeSpeed: 200,
-                backSpeed: 200,
+                strings: ['"Hello World!"', '"Hello Kean!"', '"Hello Student!"', '"Hello Staff!"'],
+                typeSpeed: 100,
+                backSpeed: 100,
                 loop: true
             })
         </script>
@@ -53,42 +53,42 @@
     <div class="card-container">
         <!-- Card 1 -->
         <div class="card">
-            <div class="card-icon" style="background: linear-gradient(45deg, #ff7e5f, #feb47b);">
-                <span>&lt;/&gt;</span>
-            </div>
+            <img src="./homeImages/ACM_KeanUniversity.png" class="card-image">
             <h3>About</h3>
             <p>Learn more about the ACM club at Kean University</p>
-            <button class="card-button" style="background-color: #ff6b6b;">CODE</button>
+            <a href=".././about/index.html">
+            <button class="card-button" style="background-color: #1d2c3a;">About Us</button>
+            </a>
         </div>
 
         <!-- Card 2 -->
         <div class="card">
-            <div class="card-icon" style="background: linear-gradient(45deg, #6a11cb, #2575fc);">
-                <span>CSS3</span>
-            </div>
+            <img src="./homeImages/Kean-Seal-615x415.png" class="card-image">
             <h3>Events</h3>
             <p>View and RSVP to our scedualed events</p>
-            <button class="card-button" style="background-color: #8e44ad;">CSS3</button>
+            <a href=".././events/index.html">
+            <button class="card-button" style="background-color: #1d2c3a;">Our Events</button>
+            </a>
         </div>
 
         <!-- Card 3 -->
         <div class="card">
-            <div class="card-icon" style="background: linear-gradient(45deg, #4facfe, #00f2fe);">
-                <span>HTML5</span>
-            </div>
+            <img src="./homeImages/CougarLinkLogo.svg">
             <h3>Join On CougarLink</h3>
             <p>If you are a kean student be sure to join on cougar link</p>
-            <button class="card-button" style="background-color: #3498db;">HTML5</button>
+            <a href="https://kean.campuslabs.com/engage">
+            <button class="card-button" style="background-color: #1d2c3a;">CougarLink</button>
+            </a>
         </div>
 
         <!-- Card 4 -->
         <div class="card">
-            <div class="card-icon" style="background: linear-gradient(45deg, #43e97b, #38f9d7);">
-                <span>JS</span>
-            </div>
+            <img src="./homeImages/MeetTheTeam.png" class="card-image">
             <h3>Staff</h3>
             <p>Meet our staff members</p>
-            <button class="card-button" style="background-color: #27ae60;">JS</button>
+            <a href="../staff/index.html">
+            <button class="card-button" style="background-color: #1d2c3a;" ui-sref="about">Staff</button>
+            </a>
         </div>
     </div>
 </body>
