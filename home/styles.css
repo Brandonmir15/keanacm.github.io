@@ -16,7 +16,7 @@ html{
 /* Body styling with gradient background */
 body {
     
-    background: #1a1b50/*#131140*/;
+    background:  #26293c  /*#1a1b50/*#131140*/;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,50 +73,55 @@ body {
 .welcome-message {
     text-align: center;
     margin-top: 100px; /* Moves it down below navbar */
-    margin-bottom: 40px;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .welcome-message h1 {
-    font-size: 36px;
+    font-size: 60px; /* Increase font size */
+    font-weight: bold; /* Make it bolder */
     color: #ffffff;
+    margin-bottom: 2px; /* Adjust spacing if needed */
 }
 
 .welcome-message p {
-    font-size: 18px;
+    font-size: 22px; /* Increase the font size for the description */
     color: #ffffff;
+    margin-top: 10px; /* Adjust spacing if needed */
 }
 
 /* Typed message font */
 .typed-message h1 {
     font-size: 62px;
-    color: rgb(210, 117, 56);
+    color: rgb(0, 255, 55);
 }
 
 /* Card container styling */
 .card-container {
-    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px; /* Increased gap between cards */
-    padding: 40px;
+    align-items: stretch; /* Ensure all cards stretch to the same height */
+    gap: 40px;
+    padding: 20px;
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 50px; /* Moves cards lower */
 }
 
 /* Card styling with increased width */
 .card {
     background-color: rgb(255, 255, 255);
-    width: 600px; /* Keep the wider card size */
-    border: 2px solid black; /* Thin black border around the card */
+    width: 600px; /* Same width */
+    border: 2px solid black;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Box shadow for elevation */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 30px;
     transition: transform 0.3s ease;
-    overflow: hidden; /* Prevents any overflow content from breaking out */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure even spacing within the card */
+    height: 100%; /* Set a fixed height for all cards */
 }
 
 .card:hover {
@@ -128,14 +133,13 @@ body {
 /* Card image styling */
 /* Card image with bottom border */
 .card-image {
-    width: 100%;              /* Full width of the card */
-    height: auto;             /* Maintain aspect ratio */
-    max-height: 200px;        /* Limit the height */
-    display: block;           /* Removes inline space below the image */
-    object-fit: contain;      /* Ensure the entire image is visible */
-    border-bottom: 1px solid black; /* Thin black border below the image */
-    border-radius: 15px 15px 0 0;  /* Round only the top corners */
-    margin-bottom: 15px;      /* Space between the image and card content */
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-bottom: 1px solid black;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
 }
 
 /* Card title */
@@ -154,6 +158,7 @@ body {
 
 /* Button inside the card */
 .card-button {
+    margin-top: auto; /* Pushes the button to the bottom of the card */
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -162,7 +167,6 @@ body {
     width: 80%;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 10px;
 }
 
 .card-button:hover {
