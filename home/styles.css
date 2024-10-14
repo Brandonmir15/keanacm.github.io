@@ -6,14 +6,23 @@
     font-family: Arial, sans-serif;
 }
 
+html{
+    height: 100%; /* Make sure both elements fill the viewport */
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Body styling with gradient background */
 body {
-   
-    background: linear-gradient(135deg, #131140, #131140);
+    
+    background: #1a1b50/*#131140*/;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    
+    
 }
 
 /* Navbar styling with rounded bottom */
@@ -86,6 +95,7 @@ body {
 
 /* Card container styling */
 .card-container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,3 +180,15 @@ body {
         align-items: center;
     }
 }
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place behind other content */
+    /*background-color: #1a1b50; /* Optional background color */
+}
+
+/*#1a1b50;*/
